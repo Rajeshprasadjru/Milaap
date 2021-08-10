@@ -1,4 +1,4 @@
-<img src="screen/Love Dating Logo.png" ></img> 
+<!-- <img src="screen/Love Dating Logo.png" ></img> 
 <br/>
 # DatingApp
 Android app like Tinder.
@@ -11,10 +11,10 @@ Android app like Tinder.
 
 ## Download
 
-* [LoveDating](https://github.com/quintuslabs/DatingApp/blob/master/lovedating1.2.apk) - Download APK
-<br/>
+* [Milaap](https://github.com/quintuslabs/DatingApp/blob/master/lovedating1.2.apk) - Download APK
+<br/> -->
 
-<br/>
+<!-- <br/>
 Dating UI kit is used for online meet up with girls and boys . The screen contains more than 30 icons and most of all required elements required to design an application like this.
 The XML and JAVA files contains comments at each and every point for easy understanding.
 Everything was made with a detail oriented style and followed by today's web trends. Clean coded & Layers are well-organized, carefully named, and grouped.
@@ -31,4 +31,4 @@ This awesome multipurpose dating app designed with a strong sense of modern and 
 By using this template UI app save your 1000% development time. This app presents a lot of layouts (Slider Landing Page, Sign In Page, Multiple Slider Sign Up Page, Swipe Page, Match Page, Gorgeous Chat Page with Giphy Support, User Public Profile, User Own Profile, Edit Profile Page and Settings pages) etc. 
 
 Therefore, this well-organized design concepts template app will help to build your dating app exactly what you’re looking for.
-
+ -->
