@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/staterecycleview"
+        tools:listitem="@layout/personitem"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="@dimen/_5dp"
+
+
+
+        >
+
+
+    </GridView>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/sclosebtn"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_close_24"/>
+</RelativeLayout>

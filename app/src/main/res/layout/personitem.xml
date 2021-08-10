@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+        <!-- top navigation -->
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:id="@+id/profileImage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_man"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="Rajesh"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/videoCalBtn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_button_with_border"
+                    android:elevation="7dp"
+                    android:onClick="DislikeBtn"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_video" />
+
+                <ImageButton
+                    android:id="@+id/likebtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/round_button_with_border"
+                    android:elevation="7dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_baseline_favorite_24"
+                    android:layout_marginEnd="20dp" />
+
+
+                <ImageButton
+                    android:id="@+id/commentbtn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/round_button_with_border"
+                    android:elevation="7dp"
+                    android:onClick="LikeBtn"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_comment" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

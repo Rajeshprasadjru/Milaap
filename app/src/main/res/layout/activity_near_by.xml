@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.milaap.app.Main.NearByActivity">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+
+        android:layout_alignParentEnd="true"
+        android:id="@+id/vipbtn"
+        android:src="@drawable/vip"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/home"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/homerecycleview"
+        android:layout_below="@id/vipbtn"
+        tools:listitem="@layout/personitem"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="@dimen/_5dp"
+
+
+
+        >
+
+
+    </GridView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.milaap.app.Main.DetailPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/profileImage"
+                android:src="@drawable/default_woman"
+                android:contentDescription="TODO" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10dp"
+                     android:id="@+id/name"
+                    android:text="Anjali Kapor"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/like"
+
+                    android:padding="@dimen/_5dp"
+                    android:layout_marginEnd="20dp"
+                    app:srcCompat="@drawable/ic_heart_white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10dp"
+                    android:text="Delhi"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10dp"
+                    android:text="555"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gifttv"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10dp"
+                    android:text="Gifts"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_10dp"
+                    android:id="@+id/viewmore"
+                    android:textColor="@color/blue_500"
+                    android:text="View more"/>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/giftrecycleview"
+
+                android:layout_height="80dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:text="About"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:text="Just Chat "/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dp"
+
+                android:textColor="@color/black"
+                android:text="Interested in"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10dp"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_5dp"
+                    android:visibility="gone"
+                    android:id="@+id/sports"
+                    app:cardCornerRadius="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5dp"
+
+                        android:text="Sports"/>
+                </androidx.cardview.widget.CardView>
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_margin="@dimen/_5dp"
+                   android:id="@+id/Travel"
+                   android:visibility="gone"
+                   app:cardCornerRadius="20dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="@dimen/_5dp"
+
+                       android:text="Travel"/>
+               </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_5dp"
+                    android:visibility="gone"
+                    android:id="@+id/Music"
+                    app:cardCornerRadius="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5dp"
+
+
+                        android:text="Music"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/_5dp"
+                    android:id="@+id/Fishing"
+                    app:cardCornerRadius="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:padding="@dimen/_5dp"
+
+                        android:text="Fishing"/>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:text="looking for"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prefer"
+                android:text="rich"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dp"
+                android:text="Describe myself"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Pretty"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dp"
+                android:text="More Information"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Body type: Average"
+                android:layout_marginBottom="100dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        android:layout_gravity="start"
+        android:id="@+id/backBtn"
+        android:background="@drawable/round_button_with_border"
+        android:src="@drawable/ic_backarrow"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10dp"
+        android:id="@+id/option"
+       android:layout_alignParentRight="true"
+        android:foregroundGravity="right"
+        android:background="@drawable/round_button_with_border"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <com.milaap.app.Utils.SquareImageView
+            android:id="@+id/videoCalBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+
+            android:background="@drawable/round_button_with_border"
+            android:elevation="7dp"
+            android:layout_margin="@dimen/_10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_video"
+            android:layout_marginEnd="20dp" />
+
+        <com.milaap.app.Utils.SquareImageView
+            android:id="@+id/likebtn"
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/_10dp"
+            android:background="@drawable/round_button_with_border"
+            android:elevation="7dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_baseline_call_24"
+             />
+
+        <com.milaap.app.Utils.SquareImageView
+            android:id="@+id/commentbtn"
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:background="@drawable/round_button_with_border"
+            android:elevation="7dp"
+            android:layout_margin="@dimen/_10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_comment"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

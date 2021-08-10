@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_5dp">
+
+    <!-- Tab title -->
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginStart="@dimen/_5dp"
+        app:cardCornerRadius="@dimen/_10dp"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/_5dp"
+
+
+        android:textColor="@drawable/tab_item_selector"/>
+
+    <!-- Tab divider -->
+    <View
+        android:layout_width="1dp"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/black" />
+</RelativeLayout>

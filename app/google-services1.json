@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "311609568103",
+    "project_id": "milaap-2bc04",
+    "storage_bucket": "milaap-2bc04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311609568103:android:1ecc32b0924361d2a99dc2",
+        "android_client_info": {
+          "package_name": "com.milaap.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311609568103-p38qkpls39tfnb76dgfdqsct55hego1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWuqaJJNx4feVW0LPu-7DLiT8hDUJvj1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311609568103-p38qkpls39tfnb76dgfdqsct55hego1r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
